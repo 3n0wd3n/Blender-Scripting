@@ -158,10 +158,12 @@ Blender application module is the entire blender application itself. The bpy cor
                       window_manager
                       workspace
 
-Everything that is shown here is actually what we have in the current context (Outliner, properties, scripting tab, viewport, atc.)
+Everything that is shown here is actually what we have in the current context (outliner, properties, scripting tab, viewport, etc.)
 
 ![context](https://user-images.githubusercontent.com/47132583/159739566-be501e46-3f7c-4772-9374-e61f1ccdbd8e.png)
 
+![scene](https://user-images.githubusercontent.com/47132583/159740931-ac045d8b-7526-49d0-8dce-f9d18fb75732.png)
 
+***Context Module***
 
  
