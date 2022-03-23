@@ -55,6 +55,7 @@ Blender application module is the entire blender application itself. The bpy cor
       Blender Game Engine and other engine components like Blender Internal 
 
 **Context Module**
+--
 
       >>> bpy.context.
                       active_annotation_layer
