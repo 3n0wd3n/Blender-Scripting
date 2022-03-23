@@ -22,7 +22,7 @@ https://docs.blender.org/api/current/index.html
 
 *Before starting:*
 
-![python_tooltip](https://user-images.githubusercontent.com/47132583/159736342-49ad0d81-15f0-4e59-be16-ee66782d5aa8.png)
+![python_tooltip](https://user-images.githubusercontent.com/47132583/159736743-bed45d69-44df-4b36-bff5-96a55b52b299.png)
 
 ## Intro to Blender API
 
