@@ -164,6 +164,156 @@ Everything that is shown here is actually what we have in the current context (o
 
 ![scene](https://user-images.githubusercontent.com/47132583/159740931-ac045d8b-7526-49d0-8dce-f9d18fb75732.png)
 
-***Context Module***
+**Basic Commands Of Context Model**
 
- 
+Returning selected objects
+
+      >>> bpy.context.selected_objects
+      [bpy.data.objects['Cube']]
+
+      >>> bpy.context.selected_objects
+      [bpy.data.objects['Cube'], bpy.data.objects['Light']]
+
+      >>> bpy.context.selected_objects
+      [bpy.data.objects['Cube'], bpy.data.objects['Light'], bpy.data.objects['Camera']]
+
+Returning of the current scene
+
+      >>> bpy.context.scene.name
+      'Scene'
+
+Creating new scene
+
+      >>> bpy.ops.scene.new(type='NEW')
+      {'FINISHED'}
+
+Returning all scenes (using bpy.data module)
+
+      >>> bpy.data.scenes
+      <bpy_collection[2], BlendDataScenes>
+
+Listing in scenes (using bpy.data module)
+
+      >>> for scene in bpy.data.scenes:
+      ...         print(scene)
+      ...         
+      <bpy_struct, Scene("Scene") at 0x0000021897364088>
+      <bpy_struct, Scene("Scene.001") at 0x00000218AF51C088>
+
+Listing in scenes and returning their names (using bpy.data module)
+
+      >>> for scene in bpy.data.scenes:
+      ...         print(scene.name)
+      ...         
+      Scene
+      Scene.001
+
+**Data Module**
+
+      >>> bpy.data.
+                   actions
+                   armatures
+                   as_pointer(
+                   batch_remove(
+                   bl_rna
+                   bl_rna_get_subclass(
+                   bl_rna_get_subclass_py(
+                   brushes
+                   cache_files
+                   cameras
+                   collections
+                   curves
+                   driver_add(
+                   driver_remove(
+                   filepath
+                   fonts
+                   get(
+                   grease_pencils
+                   id_data
+                   id_properties_clear(
+                   id_properties_ensure(
+                   id_properties_ui(
+                   images
+                   is_dirty
+                   is_property_hidden(
+                   is_property_overridable_library(
+                   is_property_readonly(
+                   is_property_set(
+                   is_saved
+                   items(
+                   keyframe_delete(
+                   keyframe_insert(
+                   keys(
+                   lattices
+                   libraries
+                   lightprobes
+                   lights
+                   linestyles
+                   masks
+                   materials
+                   meshes
+                   metaballs
+                   movieclips
+                   node_groups
+                   objects
+                   orphans_purge(
+                   paint_curves
+                   palettes
+                   particles
+                   path_from_id(
+                   path_resolve(
+                   pop(
+                   property_overridable_library_set(
+                   property_unset(
+                   rna_type
+                   scenes
+                   screens
+                   shape_keys
+                   sounds
+                   speakers
+                   temp_data(
+                   texts
+                   textures
+                   type_recast(
+                   use_autopack
+                   user_map(
+                   values(
+                   version
+                   volumes
+                   window_managers
+                   workspaces
+                   worlds
+
+What is the difference between bpy.context and bpy.data --> They both behave slightly differently.
+
+**Basic Commands Of Context Model**
+
+Returns how many objects (collection) are in the !scenes!
+
+      >>> bpy.data.objects
+      <bpy_collection[3], BlendDataObjects>
+
+Using list (python function) to return specific obejcts in the !scenes!
+
+      >>> list(bpy.data.objects)
+      [bpy.data.objects['Camera'], bpy.data.objects['Cube'], bpy.data.objects['Light']]
+
+The difference is that that bpy.data is not focused only on one scene instead of this it is checking all scenes properties. Bpy.context provide information about what am I having currently on the scene not in the memory. Bpy.data is a real place where everything is getting created.
+      
+      SCENE here is in plural form
+      The context using singular form
+      
+      >>> bpy.context.scene
+      bpy.data.scenes['Scene']
+      
+      Here we can see that scenes is not in plural form when we speaking about bpy.data
+      
+      >>> bpy.data.scenes
+      <bpy_collection[2], BlendDataScenes>
+
+Using python cuts to print all scenes instead of looping them 
+
+      >>> bpy.data.scenes[:]
+      [bpy.data.scenes['Scene'], bpy.data.scenes['Scene.001']]
+
+ **Type Module**
