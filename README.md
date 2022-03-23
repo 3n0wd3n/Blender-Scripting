@@ -20,6 +20,10 @@ https://docs.blender.org/api/current/index.html
 >
 > Intro to User Interface
 
+*Before starting:*
+
+![python_tooltip](https://user-images.githubusercontent.com/47132583/159736342-49ad0d81-15f0-4e59-be16-ee66782d5aa8.png)
+
 ## Intro to Blender API
 
 Blender application is made of three main modules 
@@ -35,6 +39,8 @@ Blender application is made of three main modules
        app
        utils
        types
+       
+Blender application module is the entire blender application itself. The bpy corresponds to the entire blender application. Delteting object, switching between edit mode and sculpting mode... everything is here.
 
 * Standalone Module
 
@@ -43,7 +49,7 @@ Blender application is made of three main modules
       bmesh
       mathutils
 
-* Game Engine Module
+* Game Engine Module (Game Engine Module is emoved from blender version 2.8)
 
       Blender Game Engine and other engine components like Blender Internal 
 
