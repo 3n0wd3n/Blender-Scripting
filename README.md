@@ -210,6 +210,7 @@ Listing in scenes and returning their names (using bpy.data module)
       Scene.001
 
 **Data Module**
+--
 
       >>> bpy.data.
                    actions
@@ -318,3 +319,4 @@ Using python cuts to print all scenes instead of looping them
       [bpy.data.scenes['Scene'], bpy.data.scenes['Scene.001']]
 
  **Type Module**
+ --
