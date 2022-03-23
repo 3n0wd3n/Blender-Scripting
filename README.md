@@ -24,7 +24,7 @@ Blender application is made of three main modules
 
 * Application Module
 
- * bpy
+ - bpy
  
   * data
   
