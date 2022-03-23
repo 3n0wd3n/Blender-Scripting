@@ -4,7 +4,7 @@
 
 [YouTube Series About BPY](https://www.youtube.com/playlist?list=PLmGhGFnN_vMITtIKBKjPJ1h5C5i-iabqO)
 
-https://docs.blender.org/api/current/index.html
+[BPY Documentation](https://docs.blender.org/api/current/index.html)
 
 *Content division:*
 
@@ -57,7 +57,7 @@ Blender application module is the entire blender application itself. The bpy cor
 **Context Module**
 --
 
-https://docs.blender.org/api/current/bpy.context.html
+[BPY Documentation - context module](https://docs.blender.org/api/current/bpy.context.html)
 
       >>> bpy.context.
                       active_annotation_layer
@@ -214,7 +214,7 @@ Listing in scenes and returning their names (using bpy.data module)
 **Data Module**
 --
 
-https://docs.blender.org/api/current/bpy.data.html
+[BPY Documentation - data module](https://docs.blender.org/api/current/bpy.data.html)
 
       >>> bpy.data.
                    actions
@@ -325,7 +325,7 @@ Using python cuts to print all scenes instead of looping them
  **Type Module**
  --
 
-https://docs.blender.org/api/current/bpy.types.html
+[BPY Documentation - type module](https://docs.blender.org/api/current/bpy.types.html)
 
 Use of bpy.type is that, that each and every object that we have in blender (light, scenes, real object in viewport, keyframes in animation section, just everything that we use inside Blender) is actualy defined under the bpy.type)
 
