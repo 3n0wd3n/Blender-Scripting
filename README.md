@@ -30,15 +30,16 @@ Blender application is made of three main modules
 
 * Application Module
 
-      bpy
-       data
-       context
-       drops
-       ops
-       path
-       app
-       utils
-       types
+      >>> bpy.
+              app
+              context
+              data
+              msgbus
+              ops
+              path
+              props
+              types
+              utils
 
 Blender application module is the entire blender application itself. The bpy corresponds to the entire blender application. Delteting object, switching between edit mode and sculpting mode... everything is here.
 
@@ -156,5 +157,11 @@ Blender application module is the entire blender application itself. The bpy cor
                       window
                       window_manager
                       workspace
+
+Everything that is shown here is actually what we have in the current context (Outliner, properties, scripting tab, viewport, atc.)
+
+![context](https://user-images.githubusercontent.com/47132583/159739566-be501e46-3f7c-4772-9374-e61f1ccdbd8e.png)
+
+
 
  
