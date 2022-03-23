@@ -57,6 +57,8 @@ Blender application module is the entire blender application itself. The bpy cor
 **Context Module**
 --
 
+https://docs.blender.org/api/current/bpy.context.html
+
       >>> bpy.context.
                       active_annotation_layer
                       active_bone
@@ -212,6 +214,8 @@ Listing in scenes and returning their names (using bpy.data module)
 **Data Module**
 --
 
+https://docs.blender.org/api/current/bpy.data.html
+
       >>> bpy.data.
                    actions
                    armatures
@@ -320,3 +324,97 @@ Using python cuts to print all scenes instead of looping them
 
  **Type Module**
  --
+
+https://docs.blender.org/api/current/bpy.types.html
+
+Use of bpy.type is that, that each and every object that we have in blender (light, scenes, real object in viewport, keyframes in animation section, just everything that we use inside Blender) is actualy defined under the bpy.type)
+
+**Basic Commands Of Type Module**
+
+This is the real place where behavior of the object is defined (all the functionalities all the properties)
+
+      >>> bpy.types.Object
+                          (
+                          Base(
+                          Constraints(
+                          Display(
+                          GpencilModifiers(
+                          LineArt(
+                          Modifiers(
+                          ShaderFx(
+                          SolverConstraint(
+                          
+      >>> bpy.types.Material
+                      (
+                      GPencilStyle(
+                      LineArt(
+                      Slot(
+      
+      >>> bpy.types.Scene
+                   (
+                   Display(
+                   EEVEE(
+                   Gpencil(
+                   Objects(
+                   RenderView(
+                   Sequence(
+      .
+      .
+      . 
+      
+      etc.
+      
+Here we can see, that everything is instance of some class (even our objects in viewport)
+
+      >>> type(bpy.context.selected_objects[0])
+      <class 'bpy_types.Object'>
+                        
+                        
+Type is blueprint for everything that is defined. Under bpy.type is everything about classes. And we just make instances of them. And we can even make our own types.
+
+Making our own type with property
+
+      >>> bpy.types.Object.MyOwnProp = "Hello Property"
+      
+See OUR own property
+
+      >>> bpy.types.Object."
+                           MyOwnProp
+                           as_pointer(
+                           bl_rna
+                           bl_rna_get_subclass(
+                           bl_rna_get_subclass_py(
+                           children
+                           cycles(
+                           driver_add(
+                           driver_remove(
+                           get(
+                           id_data
+                           id_properties_clear(
+                           id_properties_ensure(
+                           id_properties_ui(
+                           is_property_hidden(
+                           is_property_overridable_library(
+                           is_property_readonly(
+                           is_property_set(
+                           items(
+                           keyframe_delete(
+                           keyframe_insert(
+                           keys(
+                           mro(
+                           path_from_id(
+                           path_resolve(
+                           pop(
+                           property_overridable_library_set(
+                           property_unset(
+                           type_recast(
+                           users_collection
+                           users_scene
+                           values(
+
+Asking for the property 
+
+      >>> bpy.types.Object.MyOwnProp
+      'Hello Property'
+                    
+                        
