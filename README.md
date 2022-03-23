@@ -20,6 +20,14 @@ https://docs.blender.org/api/current/index.html
 
 ## Intro to Blender API
 
+Blender application is made of three main modules 
+
+* Application Module
+
+* Standalone Module
+
+* Game Engine Module
+
 **Context Module**
 
 
