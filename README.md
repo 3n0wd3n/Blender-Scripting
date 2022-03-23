@@ -18,9 +18,9 @@ https://docs.blender.org/api/current/index.html
 >
 > Intro to User Interface
 
-## Context Module
+## Intro to Blender API
 
-**Intro to Blender API**
+**Context Module**
 
 
  
