@@ -24,12 +24,16 @@ Blender application is made of three main modules
 
 * Application Module
 
- - bpy
- 
-  * data
-  
-  * context
-  
+      bpy
+       data
+       context
+       drops
+       ops
+       path
+       app
+       utils
+       types
+
 * Standalone Module
 
 * Game Engine Module
