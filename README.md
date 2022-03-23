@@ -39,7 +39,9 @@ Blender application is made of three main modules
        app
        utils
        types
-       
+
+![bpy](https://user-images.githubusercontent.com/47132583/159737291-a9761f44-2110-4cfe-9bdc-140e2d2363a2.png)
+
 Blender application module is the entire blender application itself. The bpy corresponds to the entire blender application. Delteting object, switching between edit mode and sculpting mode... everything is here.
 
 * Standalone Module
