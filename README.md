@@ -36,7 +36,14 @@ Blender application is made of three main modules
 
 * Standalone Module
 
+      bgl
+      blf
+      bmesh
+      mathutils
+
 * Game Engine Module
+
+      Blender Game Engine and other engine components like Blender Internal 
 
 **Context Module**
 
