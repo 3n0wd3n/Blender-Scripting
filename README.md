@@ -531,4 +531,5 @@ The one that is selected and active is going to be the one that the operators is
 
 **Custom Operators**
 --
-                   
+
+[Custom Operators](cstm_ops.py)
