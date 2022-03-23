@@ -185,7 +185,7 @@ Returning of the current scene
       >>> bpy.context.scene.name
       'Scene'
 
-Creating new scene
+Creating new scene (using bpy.ops module)
 
       >>> bpy.ops.scene.new(type='NEW')
       {'FINISHED'}
@@ -416,5 +416,119 @@ Asking for the property
 
       >>> bpy.types.Object.MyOwnProp
       'Hello Property'
-                    
-                        
+
+**Build in Operators**
+--
+
+      >>> bpy.ops.
+                  action
+                  anim
+                  armature
+                  asset
+                  boid
+                  brush
+                  buttons
+                  cachefile
+                  camera
+                  clip
+                  cloth
+                  collection
+                  console
+                  constraint
+                  curve
+                  cycles
+                  dpaint
+                  ed
+                  export_anim
+                  export_mesh
+                  export_scene
+                  file
+                  fluid
+                  font
+                  geometry
+                  gizmogroup
+                  gpencil
+                  graph
+                  image
+                  import_anim
+                  import_curve
+                  import_mesh
+                  import_scene
+                  info
+                  lattice
+                  marker
+                  mask
+                  material
+                  mball
+                  mesh
+                  nla
+                  node
+                  object
+                  outliner
+                  paint
+                  paintcurve
+                  palette
+                  particle
+                  pose
+                  poselib
+                  preferences
+                  ptcache
+                  render
+                  rigidbody
+                  safe_areas
+                  scene
+                  screen
+                  script
+                  sculpt
+                  sequencer
+                  sound
+                  spreadsheet
+                  surface
+                  text
+                  texture
+                  transform
+                  ui
+                  uv
+                  view2d
+                  view3d
+                  wm
+                  workspace
+                  world
+
+Use of this operator is simple --> Every button clicks, mouse events, keystrokes in blender is actually calling an operator (adding new cube, deleting curve or creating new scene or switching to the another scene even switching from object mode to edit mode). Everything is an operation. Anything that performs an operation can b qualified as an operator.
+
+**Basic Commands Of Operators Module**
+
+Select everything in the current scene
+
+      >>> bpy.ops.object.select_all(action='SELECT')
+      {'FINISHED'}
+      
+      WORKS SAME
+      
+      >>> bpy.ops.object.select_all(action='TOGGLE')
+      {'FINISHED'}
+      
+      >>> bpy.ops.object.duplicate()
+      {'FINISHED'}
+
+Adding cube to the viewport using bpy.ops
+
+      >>> bpy.ops.mesh.primitive_cube_add
+      bpy.ops.mesh.primitive_cube_add(size=2, calc_uvs=True, enter_editmode=False, align='WORLD', location=(0, 0, 0), rotation=(0, 0, 0), scale=(0, 0, 0))
+
+The context of some operations is given by their environment. Some operations we can execute only in object mode and on the other hand there is also an operation that works only in edit mode for example subdivide operation (it is bpy.ops.mesh level operation) as we know for this operation we also need selected object so we need to be careful.
+
+There is also difference between selected and active operands. Operands is any value, any object or any data over which the operation is performed so to say we need operands to perform an operation. For example if we are going to add A + B here the opperation is addition and we are performing the addition using the operands A and B. So if we want to performing an operation called subdivision so here the operand is the cube/rectangle/etc and the operation is bpy.ops.mesh.subdivision().
+
+We know that operators work on the selected object and if we perform an object level operation called duplicate() and we have never mentioned anything about the source cube/rectangle/etc that we want to duplicate actually the ops works on the context (that means on things that are selected --> there are some operators that behave little bit different from the case when we perform operation on all the opperands that are selected).
+
+For example there are operations (such as modifier --> bpy.ops.object.modifier_add(type="SUBSURF")) which apply this operation only on active object (that means when we have multiple objects selected only on the last one we selected will be operaton aplied and the last one is called active operand)
+
+![active_operands](https://user-images.githubusercontent.com/47132583/159771658-44779fb2-944b-4d23-bcef-d22d70ee270f.png)
+
+The one that is selected and active is going to be the one that the operators is going to consider for operation. There are few operation that going to work on all the objects that we have selected.
+
+**Custom Operators**
+--
+                   
