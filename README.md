@@ -533,3 +533,8 @@ The one that is selected and active is going to be the one that the operators is
 --
 
 [Custom Operators](cstm_ops.py)
+
+**UI**
+--
+
+[User Interfaces Layouts & Properties](cstm_ops_ui.py)
