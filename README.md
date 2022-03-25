@@ -543,6 +543,20 @@ What are the other different types of UI that we can create in Blender
 
 UI properties is the one that is going to helps in defining what type of content we are going to show in the UI. Basicly we will use properties for defining what type of data we are going to show in the UI.
 
+* INT property
+
+* INT vector property
+
+* BOOLEAN property
+
+* BOOLEAN vector property
+
+* FLOAT property
+
+* FLOAT vector property
+
+* STRING property
+
 [BPY.Props]
 
 **UI Layouts**
@@ -552,5 +566,13 @@ UI layout is going to help us in defining how the UI should be structured. Basic
 Rows and Columns
 
 ![UI](https://user-images.githubusercontent.com/47132583/160067786-e877132f-49cc-4fa1-8804-f51660bc2514.png)
+
+> PANEL BASED UI is picture one from right-hand side
+>
+> COLAPSABLE BASED UI is the second one from right-hand side
+>
+> POP-UP BASED UI is the third one from right-hand side
+>
+> PI (koláč) BASED UI is on the upper right-hand corner
 
 [User Interfaces Layouts & Properties](cstm_ops_ui.py)
