@@ -551,4 +551,6 @@ UI layout is going to help us in defining how the UI should be structured. Basic
 
 Rows and Columns
 
+![UI](https://user-images.githubusercontent.com/47132583/160067786-e877132f-49cc-4fa1-8804-f51660bc2514.png)
+
 [User Interfaces Layouts & Properties](cstm_ops_ui.py)
