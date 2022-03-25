@@ -537,4 +537,18 @@ The one that is selected and active is going to be the one that the operators is
 **UI**
 --
 
+What are the other different types of UI that we can create in Blender 
+
+**UI Properties**
+
+UI properties is the one that is going to helps in defining what type of content we are going to show in the UI. Basicly we will use properties for defining what type of data we are going to show in the UI.
+
+[BPY.Props]
+
+**UI Layouts**
+
+UI layout is going to help us in defining how the UI should be structured. Basicly how we are going to show the data in UI
+
+Rows and Columns
+
 [User Interfaces Layouts & Properties](cstm_ops_ui.py)
