@@ -557,7 +557,7 @@ UI properties is the one that is going to helps in defining what type of content
 
 * STRING property
 
-[BPY.Props]
+[bpy.props]
 
 **UI Layouts**
 
