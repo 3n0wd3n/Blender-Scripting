@@ -589,4 +589,6 @@ UI layout is going to help us in defining how the UI should be structured. Basic
 
 * bpy.props is not only for UI it is also used for storing variables as a global parameter or within a context of an operator and do some operations over that 
 
-* in that case we can make use of the property and we can define and declare our own properties and we can do some mathematical functions or something like that 
+* in that case we can make use of the property and we can define and declare our own properties and we can do some mathematical functions or something like that
+
+[User Interfaces Layouts & Properties -- LAYOUT](cstm_ops_ui--layout.py)
