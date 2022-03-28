@@ -563,7 +563,17 @@ UI properties is the one that is going to helps in defining what type of content
 
 UI layout is going to help us in defining how the UI should be structured. Basicly how we are going to show the data in UI
 
-Rows and Columns
+* Rows and Columns
+
+* Column Split Layout
+
+* Width, Height and alignments
+
+* Label
+
+* Prop
+
+* Button action - OPERATOR
 
 ![UI](https://user-images.githubusercontent.com/47132583/160067786-e877132f-49cc-4fa1-8804-f51660bc2514.png)
 
@@ -576,3 +586,7 @@ Rows and Columns
 > PI (koláč) BASED UI is on the upper right-hand corner
 
 [User Interfaces Layouts & Properties](cstm_ops_ui.py)
+
+* bpy.props is not only for UI it is also used for storing variables as a global parameter or within a context of an operator and do some operations over that 
+
+* in that case we can make use of the property and we can define and declare our own properties and we can do some mathematical functions or something like that 
