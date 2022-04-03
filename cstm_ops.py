@@ -15,7 +15,7 @@ We only can call the operator when is registered in bpy.ops
 
 # We need to akke function because if we wnat to call this operator we need to difine his atributes and we will call this function and class
 
-class MyOpeator(bpy.types.Operator):
+class MyOperator(bpy.types.Operator):
   # the value which is defining here is going to be the path in bpy.ops
   bl_idname = "mesh.mycubeoperator"
   # For definition purpose yet
@@ -32,9 +32,10 @@ class MyOpeator(bpy.types.Operator):
     bpy.context.selected_objects[0].rotation_euler.z += 10
     
     return {"FINISHED"}
-
+    
+    
 # We need to register our operator --> we will use utility class
+
 bpy.utils.register_class(MyOperator)
 
-# To run this operator we need to go to console and place here this
 bpy.ops.mesh.mycubeoperator()
