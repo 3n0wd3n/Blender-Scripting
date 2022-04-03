@@ -20,7 +20,7 @@ class MyOperatorUI(bpy.types.Panel):
     row.label(text = "My Blender Addon")
     
     row_space = layout.row()
-    row_space.operator("mesh.mycubeoperator")
+    row_space.operator("mesh.cubeoperator")
 
 # TASKS
 """
@@ -50,3 +50,4 @@ def unregister():
    
 if __name__ == "__main__":
   register()
+
