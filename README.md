@@ -2,6 +2,8 @@
 
 *Handsome and useful links:*
 
+[Basic BPY Tutorial](https://www.youtube.com/watch?v=cyt0O7saU4Q)
+
 [YouTube Series About BPY](https://www.youtube.com/playlist?list=PLmGhGFnN_vMITtIKBKjPJ1h5C5i-iabqO)
 
 [BPY Documentation](https://docs.blender.org/api/current/index.html)
