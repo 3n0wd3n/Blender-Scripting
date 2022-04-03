@@ -16,7 +16,7 @@ class MyOperatorUI(bpy.types.Panel):
   def draw(self, context):
     layout = self.layout
     
-    row = self.row()
+    row = layout.row()
     row.label(text = "My Blender Addon")
     
     row_space = layout.row()
