@@ -1,6 +1,6 @@
 # Libraries
 
-NUPY](https://numpy.org/)
+[NUPY](https://numpy.org/)
 
 [SCIPY](https://scipy.org/)
 
