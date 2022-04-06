@@ -1,4 +1,4 @@
-# lIBRARIES
+# Libraries
 
 NUPY](https://numpy.org/)
 
